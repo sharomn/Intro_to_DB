@@ -8,13 +8,13 @@ CREATE TABLE Authors (
 );
 
 -- Create BOOKS table
-CREATE TABLE BOOKS (
+CREATE TABLE Books (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(130) NOT NULL,
     author_id INT,
     price DOUBLE,
     publication_date DATE,
-    FOREIGN KEY (author_id) REFERENCES AUTHORS(author_id)
+    FOREIGN KEY (author_id) REFERENCES Authors(author_id)
         ON DELETE SET NULL
         ON UPDATE CASCADE
 );
