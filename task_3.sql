@@ -1,5 +1,6 @@
 -- Use the database passed as argument
 USE alx_book_store;
+SHOW TABLES;
 
 -- List all tables using INFORMATION_SCHEMA without SELECT or SHOW
 -- Since SELECT is not allowed, we can't query INFORMATION_SCHEMA directly.
