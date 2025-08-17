@@ -33,7 +33,7 @@ CREATE TABLE ORDERS (
     order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
     order_date DATE,
-    FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMERS(customer_id)
+    FOREIGN KEY (customer_id) REFERENCES CUSTOMERS(customer_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
 );
